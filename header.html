@@ -1,36 +1,197 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Basic Information about Mercury</title>
-    <link rel="stylesheet" href="./styleHeader.css">
-    <link rel="icon" href="./pic/epa.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./grids.css">
-</head>
+    <link rel="stylesheet" href="./styleHeader.css" />
+    <link rel="icon" href="./pic/epa.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./grids.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="greyLine">
-        <div class="col-1"></div>
-        <div class="col-10">
-            <img class="picFlag" src="https://www.epa.gov/themes/epa_theme/images/us_flag_small.png" alt="U.S. flag">
-            <p class="greyWebb">An official website of the United States government
-                <a href="#" target="_blank">Here’s how you know</a>
-            </p>
-        </div>
-        <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-10">
+        <img
+          class="picFlag"
+          src="https://www.epa.gov/themes/epa_theme/images/us_flag_small.png"
+          alt="U.S. flag"
+        />
+        <p class="greyWebb">
+          An official website of the United States government
+          <a href="#" target="_blank">Here’s how you know</a>
+        </p>
+      </div>
+      <div class="col-1"></div>
     </div>
     <header>
-        <div class="col-1"></div>
-        <img src="./pic/epa logo + text.png" alt="EPA Logo" class="logoEPA col-3">
-        <div class="col-3"></div>
-        <div class="search-container col-4">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Search EPA.gov" name="search">
-                <button type="submit"> <img src="./pic/search.png" alt="search" class="imgSearch"> </button>
-            </form>
-        </div>
-        <div class="col-1"></div>
+      <div class="col-1"></div>
+      <img
+        src="./pic/epa logo + text.png"
+        alt="EPA Logo"
+        class="logoEPA col-3"
+      />
+      <div class="col-3"></div>
+      <div class="search-container col-4">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search EPA.gov" name="search" />
+          <button type="submit">
+            <img src="./pic/search.png" alt="search" class="imgSearch" />
+          </button>
+        </form>
+      </div>
+      <div class="col-1"></div>
     </header>
-</body>
+    <div class="menu">
+      <div class="container">
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction('dropdown1')">
+            Environmental Topics
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="link" id="dropdown1">
+            <a href="https://www.epa.gov/environmental-topics">
+              Environmental Topics</a
+            >
+            <a href="https://www.epa.gov/environmental-topics/air-topics"
+              >Air</a
+            >
+            <a href="https://www.epa.gov/bedbugs">Bed Bugs</a>
+            <a
+              href="https://www.epa.gov/environmental-topics/chemicals-and-toxics-topics"
+            >
+              Chemicals and Toxics</a
+            >
+            <a href="https://www.epa.gov/climate-change">Climate Change</a>
+            <a href="https://www.epa.gov/emergency-response"
+              >Emergency Response</a
+            >
+            <a
+              href="https://www.epa.gov/environmental-topics/environmental-information-by-location"
+              >Environmental Information by Location</a
+            >
+            <a href="https://www.epa.gov/environmental-topics/greener-living"
+              >Greener Living</a
+            >
+            <a href="https://www.epa.gov/environmentaljustice"
+              >Environmental Justice</a
+            >
 
+            <a href="https://www.epa.gov/environmental-topics/health-topics"
+              >Health</a
+            >
+
+            <a
+              href="https://www.epa.gov/environmental-topics/land-waste-and-cleanup-topics"
+            >
+              Land, Waste, and Cleanup</a
+            >
+            <a href="https://www.epa.gov/lead">Lead</a>
+            <a href="https://www.epa.gov/mold">Mold</a>
+            <a href="https://www.epa.gov/pesticides"> Pesticides</a>
+            <a href="https://www.epa.gov/radon"> Radon</a>
+
+            <a href="https://www.epa.gov/environmental-topics/science-topics"
+              >Science Topics</a
+            >
+
+            <a href="https://www.epa.gov/environmental-topics/water-topics"
+              >Water Topics</a
+            >
+
+            <a href="https://www.epa.gov/topics-epa-web">A-Z Topic Index</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction('dropdown2')">
+            Laws & Regulations
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="link" id="dropdown2">
+            <a href="https://www.epa.gov/laws-regulations"
+              >Laws & Regulations</a
+            >
+
+            <a href="https://www.epa.gov/regulatory-information-sector">
+              By Business Sector</a
+            >
+
+            <a href="https://www.epa.gov/regulatory-information-topic"
+              >By Topic</a
+            >
+            <a href="https://www.epa.gov/compliance">Compliance</a>
+            <a href="https://www.epa.gov/enforcement">Enforcement</a>
+            <a href="https://www.epa.gov/guidance">Guidance</a>
+
+            <a
+              href="https://www.epa.gov/laws-regulations/laws-and-executive-orders"
+              >Laws and Executive Orders</a
+            >
+
+            <a href="https://www.epa.gov/laws-regulations/regulations"
+              >Regulations</a
+            >
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction('dropdown3')">
+            Report a Violation
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="link" id="dropdown3">
+            <a href="https://www.epa.gov/report-violation"
+              >Report a Violation</a
+            >
+            <a href="https://echo.epa.gov/report-environmental-violations"
+              >Environmental Violations</a
+            >
+            <a
+              href="https://www.epa.gov/office-inspector-general/forms/epa-oig-hotline-complaint-form"
+              >Fraud, Waste or Abuse</a
+            >
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction('dropdown4')">
+            About EPA
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="link" id="dropdown4">
+            <a href="https://www.epa.gov/aboutepa">About EPA</a>
+            <a href="https://www.epa.gov/aboutepa/our-mission-and-what-we-do"
+              >Our Mission and What We Do</a
+            >
+            <a href="https://www.epa.gov/aboutepa/epa-administrator"
+              >EPA Administrator</a
+            >
+            <a href="https://www.epa.gov/aboutepa#hq">Headquarters Offices</a>
+            <a
+              href="https://www.epa.gov/aboutepa/regional-and-geographic-offices"
+              >Regional Offices</a
+            >
+            <a
+              href="https://www.epa.gov/aboutepa/research-centers-programs-and-science-advisory-organizations"
+              >Labs and Research Centers</a
+            >
+            <a href="https://www.epa.gov/planandbudget"
+              >Planning, Budget, and Results</a
+            >
+            <a href="https://www.epa.gov/aboutepa/epa-organization-chart"
+              >Organization Chart</a
+            >
+            <a href="EPA History">EPA History</a>
+            <a href="https://cfpub.epa.gov/locator/index.cfm"
+              >Staff Directory</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
